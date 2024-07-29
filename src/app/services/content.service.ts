@@ -53,7 +53,7 @@ export class ContentService {
         );
     }
 
-    public getPost(id: string): Observable<Page | null> {
+    public getPost(id: string): Observable<Post | null> {
         const url = this.config.buildUrl(`api/content/{app}/posts/${id}`);
 
         return this.httpClient.get<any>(url)
