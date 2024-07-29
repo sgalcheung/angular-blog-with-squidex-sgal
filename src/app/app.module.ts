@@ -14,6 +14,7 @@ import { TopNavComponent } from './top-nav/top-nav.component';
 import { Config, DefaultConfig } from './services/config';
 
 import { AuthInterceptor } from './services/auth.interceptor';
+import { BypassHtmlSanitizerPipe } from './bypasshtml-sanitizer.pipe';
 
 @NgModule({
     declarations: [
@@ -23,7 +24,8 @@ import { AuthInterceptor } from './services/auth.interceptor';
         PostsSiteComponent,
         PageComponent,
         PageSiteComponent,
-        TopNavComponent
+        TopNavComponent,
+        BypassHtmlSanitizerPipe,
     ],
     imports: [
         BrowserModule,

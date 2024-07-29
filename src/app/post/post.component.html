@@ -10,4 +10,6 @@
     </ng-template>
 
     <div [innerHTML]="post.text"></div>
+
+    <div *ngIf="isPostRouter" [innerHTML]="post.html | bypassHtmlSanitizer"></div>
 </div>

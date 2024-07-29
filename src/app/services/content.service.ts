@@ -10,6 +10,7 @@ export interface Post {
     text: string;
     title: string;
     slug: string;
+    html: string;
 }
 
 export interface Page {
@@ -86,7 +87,8 @@ function parsePost(response: any): Post {
         id: response.id,
         title: response.data.title.iv,
         text: response.data.text.iv,
-        slug: response.data.slug.iv
+        slug: response.data.slug.iv,
+        html: response.data.html?.iv
     };
 }
 
